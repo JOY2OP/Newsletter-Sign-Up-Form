@@ -37,11 +37,11 @@ html, body{
 .newsletter{
     display: flex;
     flex-wrap: column;
-    /* gap: 3rem; */
     background-color: #fff;
     border-radius: 15px;
-    height: 80%;
-    width: 60%;
+
+    height: 520px;
+    width: 820px;
 }
 
 /* LEFT BOX */
@@ -50,7 +50,6 @@ html, body{
     flex: 1;
     /* margin:1rem 3rem; */
     padding: 1rem 0 1rem 3rem ;
-    /* align-items: center; */
     justify-content: center;
     display: flex;
     flex-direction: column;
