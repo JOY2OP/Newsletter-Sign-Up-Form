@@ -12,7 +12,12 @@
 <body>
 
   <div class="newsletter">
+    <div class="mobile-picture">
+      <img src="assets/images/illustration-sign-up-mobile.svg" alt="">
+    </div>
     <div class="left">
+      
+      
       <h1 class="left__title">Stay updated!</h1>
       <p class="left__para">Join 60,000+ product managers receiving monthly updates on:</p>
       <ul class="left__list">
@@ -38,14 +43,18 @@
         </li>
       </ul>
 
+      
+
       <div class="left__email-box">
-        <form id="emailForm">
+        
+      <form id="emailForm">
+          
         <div class="email">
           <div class="email-left"><p class="email-box__email">Email address</p></div>
           <div class="email-right"><p class="email-box__error">Valid email required</p></div>
         </div>
         <input type="email" id="email" name="email" placeholder="email@company.com" class="email-box__field" required>
-        <button class="email-box__subscribe" type="submit">Subscribe to monthly newsletter</button>
+        <button class="email-box__subscribe" type="button" onclick="validateEmail()">Subscribe to monthly newsletter</button>
       </form>
       </div>
 

@@ -104,3 +104,22 @@ button:hover{
 
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.267);
 }
+
+/* Media Queries */
+@media screen and (max-width:375px) {
+    .sub__confirmed{ 
+        height: 100%;
+        width: 100%;
+        border-radius: 0; 
+        padding: 8rem 1rem 0 1rem;
+    }
+
+    .sub__title{
+        font-size: 3rem;
+    }
+
+    button{
+        margin-top: 16rem;
+    }
+
+}

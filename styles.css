@@ -40,8 +40,8 @@ html, body{
     background-color: #fff;
     border-radius: 15px;
 
-    height: 520px;
-    width: 820px;
+    height: 32.5rem;    /*520px;*/
+    width: 51.5rem;     /*820px;*/
 }
 
 /* LEFT BOX */
@@ -67,14 +67,14 @@ html, body{
 .left__title{
     font-family: 'Roboto-bold';
     color: var(--slate-grey);
-    font-size: 54px;
+    font-size: 3.375rem;
     /* letter-spacing: 1px; */
 
     /* padding: 1rem 0; */
 }
 
 .left__para{
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--charcoal-grey);
 
     padding: 1rem 0;
@@ -87,7 +87,7 @@ html, body{
 }
 
 ul{
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--charcoal-grey);
 
     padding-top: 1rem ;
@@ -96,9 +96,9 @@ ul{
 li{
     display: flex;
     padding: 0.1rem 0;
-    gap: 15px;
+    gap: 0.938rem;
 
-    padding: 5px;
+    padding: 0.313rem;
 
 }
 
@@ -108,8 +108,8 @@ li{
 }
 
 li img{
-    height: 17px;
-    width: 17px;
+    height: 1.063rem;
+    width: 1.063rem;
     object-fit: contain;
     
 }
@@ -122,6 +122,10 @@ li img{
 
 }
 
+.mobile-picture{
+    display: none;
+}
+
 .email{
     display: flex;
     flex-direction: row;    
@@ -130,17 +134,17 @@ li img{
 
 .email-box__email {
     font-family: 'Roboto-bold';
-    font-size: 11px;
+    font-size: 0.688rem;
     color: var(--slate-grey);
 
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .email-box__error{
     color: red;
     font-family: 'Roboto-bold';
-    font-size: 11px;
-    margin-bottom: 10px; 
+    font-size: 0.688rem;
+    margin-bottom: 0.625rem; 
     display: none;   /*change this prop*/
 }
 
@@ -148,13 +152,13 @@ input{
     width: 100%;
     padding: 1rem;
 
-    font-size: 14px;
+    font-size: 0.875rem;
     font-family: 'Roboto-regular';
     color: var(--slate-grey);      /*change this prop*/
     border: 1px solid var(--grey); /*change this prop*/
     border-radius: 5px;
 
-    margin-bottom: 15px;
+    margin-bottom: 0.938rem;
 
     outline:none
 }
@@ -162,10 +166,20 @@ input{
 input:focus {
     border: 1px solid var(--slate-grey);
     outline: none;
-  }
+}
+
+.input-error{
+    color: rgb(245, 32, 32);      /*change this prop*/
+    border: 1px solid red;
+    background-color:rgba(245, 159, 159, 0.178) ;
+}
+.input-error:focus{
+    border: 1px solid red;
+    outline: none;
+}
 
 button{
-    font-size: 14px;
+    font-size: 0.875rem;
     letter-spacing: 1px;
     padding: 1rem 4rem;
     width: 100%;
@@ -180,7 +194,7 @@ button{
 }
 
 button:hover{
-    font-size: 14px;
+    font-size: 0.875rem;
     letter-spacing: 1px;
     padding: 1rem 4rem;
     width: 100%;
@@ -201,7 +215,9 @@ button:hover{
 
 /* RIGHT IMG */
 .right img{
-    /* margin: 0.7rem 0.7rem 0.7rem 0.7rem; */
+    display: flex;
+    flex-wrap: column;
+
     object-fit: contain ;
     border-radius: 20px;
 
@@ -209,3 +225,50 @@ button:hover{
 }
 
 /* Media Queries */
+@media screen and (max-width:375px) {
+
+    .newsletter{
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        color: #fff;
+
+        display: block;
+        overflow: auto;
+    }
+
+    .mobile-picture{
+        display: block;
+        width: 100%;
+    }
+
+    .left{
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+
+        margin-top: -5rem;
+    }
+
+    .right{
+        display: none;
+    }
+   
+    .left__title{
+        font-size: 3rem;
+    }
+
+    .right img{
+        display: none;
+    }
+
+    button{
+        font-size: 0.9rem;
+        padding: 1rem 0;
+    }
+
+    button:hover{
+        font-size: 0.9rem;
+        padding: 1rem 0;
+    }
+}
