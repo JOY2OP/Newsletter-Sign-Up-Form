@@ -61,8 +61,11 @@ html, body{
 p{
     font-size: 16px;
     color: var(--charcoal-grey);
+    line-height: 1.5;
+}
 
-
+#email-span{
+    font-family: 'Roboto-bold';
 }
 
 button{
@@ -99,6 +102,5 @@ button:hover{
 
     margin-top: 2rem;
 
-    box-shadow: 5px 5px 30px grey;
-
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.267);
 }

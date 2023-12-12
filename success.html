@@ -8,17 +8,33 @@
 </head>
 <body>
     <div class="sub__confirmed">
-        
-        <div class="sub__icon">
-            <img src="assets/images/icon-success.svg" alt="icon-list">
-        </div>
-        <h1 class="sub__title">Thanks for subscribing!</h1>
-        <p>
-            A confirmation email has been sent to {}. 
-            Please open it and click the button inside to 
-            confirm your subscription.
-        </p>
-        <button>Dismiss message</button>
+        <form >
+            <div class="sub__icon">
+                <img src="assets/images/icon-success.svg" alt="icon-list">
+            </div>
+            <h1 class="sub__title">Thanks for subscribing!</h1>
+            <p>
+                A confirmation email has been sent to <span id="email-span"></span>. 
+                Please open it and click the button inside to 
+                confirm your subscription.
+            </p>
+            <button id="close">Dismiss message</button>
+            </form>
     </div>
+
+    <script>
+        const closeMsg = document.getElementById('close');
+        const emailSpan = document.getElementById('email-span')
+
+        const inputValue = localStorage.getItem('email');
+        emailSpan.textContent=inputValue
+        console.log(inputValue);
+
+        closeMsg.addEventListener('click', (e) =>{
+            e.preventDefault();
+            // window.location.href = 'index.html'
+            
+        })
+    </script>
 </body>
 </html>
