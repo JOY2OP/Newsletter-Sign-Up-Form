@@ -122,12 +122,26 @@ li img{
 
 }
 
-.left__email-box p {
+.email{
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;
+}
+
+.email-box__email {
     font-family: 'Roboto-bold';
     font-size: 11px;
     color: var(--slate-grey);
 
     margin-bottom: 10px;
+}
+
+.email-box__error{
+    color: red;
+    font-family: 'Roboto-bold';
+    font-size: 11px;
+    margin-bottom: 10px; 
+    display: none;   /*change this prop*/
 }
 
 input{
@@ -136,14 +150,19 @@ input{
 
     font-size: 14px;
     font-family: 'Roboto-regular';
-    color: var(--slate-grey);
-    border: 1px solid var(--grey);
+    color: var(--slate-grey);      /*change this prop*/
+    border: 1px solid var(--grey); /*change this prop*/
     border-radius: 5px;
 
     margin-bottom: 15px;
 
     outline:none
 }
+
+input:focus {
+    border: 1px solid var(--slate-grey);
+    outline: none;
+  }
 
 button{
     font-size: 14px;
@@ -174,6 +193,8 @@ button:hover{
     border-radius: 5px;
 
     cursor: pointer ;
+
+    box-shadow: 5px 5px 30px grey;
 }
 
 
@@ -187,4 +208,4 @@ button:hover{
     margin-right: 0.4rem;
 }
 
-
+/* Media Queries */

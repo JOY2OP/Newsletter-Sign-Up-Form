@@ -39,9 +39,14 @@
       </ul>
 
       <div class="left__email-box">
-        <p>Email address</p>
-        <input type="email" placeholder="email@company.com" class="email-box__field">
-        <button class="email-box__subscribe">Subscribe to monthly newsletter</button>
+        <form id="emailForm">
+        <div class="email">
+          <div class="email-left"><p class="email-box__email">Email address</p></div>
+          <div class="email-right"><p class="email-box__error">Valid email required</p></div>
+        </div>
+        <input type="email" id="email" name="email" placeholder="email@company.com" class="email-box__field" required>
+        <button class="email-box__subscribe" type="submit">Subscribe to monthly newsletter</button>
+      </form>
       </div>
 
     </div>
@@ -51,42 +56,7 @@
   </div>
 
 
-
-
-
-
-
-
-
-
-  <!-- Sign-up form start -->
-
-  <!-- Stay updated!
-
-  Join 60,000+ product managers receiving monthly updates on:
-
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
-
-  Email address
-  email@company.com
-
-  Subscribe to monthly newsletter -->
-
-  <!-- Sign-up form end -->
-
-  <!-- Success message start -->
-
-  <!-- Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message -->
-
-  <!-- Success message end -->
   
-
+<script src="index.js"></script>
 </body>
 </html>
