@@ -225,7 +225,7 @@ button:hover{
 }
 
 /* Media Queries */
-@media screen and (max-width:375px) {
+@media screen and (max-width:751px) {
 
     .newsletter{
         width: 100vw;
@@ -240,6 +240,8 @@ button:hover{
     .mobile-picture{
         display: block;
         width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .left{

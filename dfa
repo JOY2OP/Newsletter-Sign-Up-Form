@@ -1,0 +1,35 @@
+[33mcommit 0b98bbd86410a728875320a577a7c564dfec0dee[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Joy <joymasih43@gmail.com>
+Date:   Tue Dec 12 23:10:03 2023 +0530
+
+    CHANGED THE PATH OF FONT FOLDER
+
+[33mcommit 4c9479f3c155c84d4e8748f763dc105378890088[m
+Author: Joy <joymasih43@gmail.com>
+Date:   Tue Dec 12 23:01:55 2023 +0530
+
+    Added responsiveness
+
+[33mcommit 38b0994400b716e1e2e4dd87d680cd6d31ee60d1[m
+Author: Joy <joymasih43@gmail.com>
+Date:   Tue Dec 12 15:20:47 2023 +0530
+
+    added local storage
+
+[33mcommit 6cff1f77ad7763bcb17e7bd9e01151dcf9c500f3[m
+Author: Joy <joymasih43@gmail.com>
+Date:   Tue Dec 12 14:21:09 2023 +0530
+
+    various changes
+
+[33mcommit 4586747fad9fe7da7eb6b8d04f62b4db1e475975[m
+Author: Joy <joymasih43@gmail.com>
+Date:   Mon Dec 11 23:15:32 2023 +0530
+
+    changed the units from rem to px
+
+[33mcommit 3148d5d6fbf73dd55c450e7f81c4ad7419380cb9[m
+Author: Joy <joymasih43@gmail.com>
+Date:   Mon Dec 11 23:02:05 2023 +0530
+
+    First commit
